@@ -14,7 +14,7 @@ app.get('/getUsers', function(req, res) {
 app.get('/getUsers/:id', function(req,res){
   fs.readFile(__dirname + "/" + "user.json",'utf8', function(err,data){
     var users = JSON.parse(data); //convert data (all users)
-    var user = users["INTERNAL_CLADDING"+ req.params.id]; //add condition(find user by id)
+    var user = users["User"+ req.params.id]; //add condition(find user by id)
     console.log(user);
     res.end(JSON.stringify(user));
   });
@@ -22,18 +22,10 @@ app.get('/getUsers/:id', function(req,res){
 
 
 var user = {
-    "INTERNAL_CLADDING2": {
-        "Transaction Record": "example1",
-        "Ownership ID": "77889911",
-        "Element ID": "77889911",
-        "Production Date": "4/7/2021",
-        "Production Location": "Melbourne",
-        "Installation Date": "4/7/2021",
-        "Warranty Start Date": "4/7/2021",
-        "Warranty Duration ": "1 year",
-        "Warranty Description": "The details pertaining to the warranty including what is covered and not covered under the warranty conditions.",
-        "Maintenance Scope": "The extent of the maintenance required to be performed for each product, material or assembly including defect rectification, cleaning etc.",
-        "Maintenance Instructions": "The procedures required to be completed in order to keep a product, material or assembly in good working order.",
+    "User 2": {
+        "name": "example1",
+        "passport number": "77889911",
+        "DOB": "4/7/2021",
         "id" : 2
     }
 }
