@@ -1,17 +1,8 @@
 {
-    "INTERNAL_CLADDING1": {
-        "Transaction Record": "example1",
-        "Ownership ID": "00112233",
-        "Element ID": "00112233",
-        "Production Date": "1/2/2021",
-        "Production Location": "Sydney",
-        "Installation Date": "1/2/2021",
-        "Warranty Start Date": "1/2/2021",
-        "Warranty Duration ": "1 year",
-        "Warranty Description": "The details pertaining to the warranty including what is covered and not covered under the warranty conditions.",
-        "Maintenance Scope": "The extent of the maintenance required to be performed for each product, material or assembly including defect rectification, cleaning etc.",
-        "Maintenance Instructions": "The procedures required to be completed in order to keep a product, material or assembly in good working order.",
+    "User 1": {
+        "name": "example1",
+        "passport number": "12345678",
+        "DOB": "4/7/2021",
         "id" : 1
     }
-
 }
